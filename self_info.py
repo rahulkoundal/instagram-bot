@@ -14,7 +14,9 @@ def self_info():
 #len function
     if len(user_info['data']):
       #usernam fetch
-      print 'Username: %s' % (user_info['data']['username'])
+      #print 'Username: %s' % (user_info['data']['username'])
+      insta_username=user_info['data']['username']
+      print 'username:%s' %(insta_username)
       #no of followers,following,posts
       print 'No. of followers: %s' % (user_info['data']['counts']['followed_by'])
       print 'No. of people you are following: %s' % (user_info['data']['counts']['follows'])
@@ -23,7 +25,7 @@ def self_info():
       pimage=user_info['data']['profile_picture']
       pimage1=user_info['data']['id'] +'.jpeg'
       urllib.urlretrieve(pimage,pimage1)
-      print 'image downloaded'
+      print 'image is downloaded'
     else:
       print 'User does not exist!'
   else:

@@ -1,4 +1,6 @@
 #main file
 import requests
 from self_info import  *
-self_info()
+from get_id import *
+#self_info()
+get_user_id()
