@@ -8,6 +8,8 @@ def self_info():
   print 'GET request url : %s' % (request_url)
   user_info = requests.get(request_url).json()
 
+#to check wheather server is reply or not
+  #if reply 200 then server reply
   if user_info['meta']['code'] == 200:
     if len(user_info['data']):
       print 'Username: %s' % (user_info['data']['username'])
