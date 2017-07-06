@@ -5,7 +5,7 @@ import urllib
 # _
 def get_user_info(insta_username):
     user_id = get_user_id(insta_username)
-    if user_id == None:
+    if user_id == None:                      #if user_id ==none no user is found
         print 'User does not exist!'
         exit()
     request_url = (BASE_URL + 'users/%s?access_token=%s') % (user_id, APP_ACCESS_TOKEN)
@@ -23,5 +23,7 @@ def get_user_info(insta_username):
             print 'There is no data for this user!'
     else:
         print 'Status code other than 200 received!'
+
+#calling to get user functtion
 
 get_user_info(raw_input("enter user name"))
