@@ -13,7 +13,9 @@ def self_info():
   if user_info['meta']['code'] == 200:
 #len function
     if len(user_info['data']):
+      #usernam fetch
       print 'Username: %s' % (user_info['data']['username'])
+      #no of followers,following,posts
       print 'No. of followers: %s' % (user_info['data']['counts']['followed_by'])
       print 'No. of people you are following: %s' % (user_info['data']['counts']['follows'])
       print 'No. of posts: %s' % (user_info['data']['counts']['media'])
