@@ -11,17 +11,17 @@ def self_info():
 #to check wheather server is reply or not
   #if reply 200 then server reply
   if user_info['meta']['code'] == 200:
+#len function
     if len(user_info['data']):
       print 'Username: %s' % (user_info['data']['username'])
       print 'No. of followers: %s' % (user_info['data']['counts']['followed_by'])
       print 'No. of people you are following: %s' % (user_info['data']['counts']['follows'])
       print 'No. of posts: %s' % (user_info['data']['counts']['media'])
-      iimagename=user_info['data']['profile_picture']
-      imagename2=user_info['data']['id'] +'.jpeg'
-      urllib.urlretrieve(iimagename,imagename2)
+      #fetch profile photo from instgram
+      pimage=user_info['data']['profile_picture']
+      pimage1=user_info['data']['id'] +'.jpeg'
+      urllib.urlretrieve(pimage,pimage1)
       print 'image downloaded'
-
-
     else:
       print 'User does not exist!'
   else:
