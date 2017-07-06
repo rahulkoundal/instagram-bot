@@ -1,5 +1,4 @@
 #main file
-import self_info
 import requests
-
+from self_info import  *
 self_info()
