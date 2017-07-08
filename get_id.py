@@ -1,7 +1,9 @@
-#get_user id _function 
+#get_user id _function
 import requests
 from constant import *
 from constant import *
+
+#get_user_id function
 
 def get_user_id(insta_username):
     request_url = (BASE_URL + 'users/search?q=%s&access_token=%s') % (insta_username, APP_ACCESS_TOKEN)
