@@ -1,5 +1,5 @@
 import requests
-from constants import *
+from constant import APP_ACCESS_TOKEN,BASE_URL
 from get_post_id import get_post_id
 
 #def a fuction for comment on a post

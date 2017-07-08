@@ -1,6 +1,6 @@
 #import library or other fuction from another python file
 import requests
-from constants import *
+from constant import APP_ACCESS_TOKEN,BASE_URL
 from get_post_id import *
 
 #def a fuction for like a user most recent post

@@ -1,7 +1,7 @@
 #import library and python file for supporting fuction
 from __future__ import print_function
 from get_user_id import *
-from constants import *
+from constant import APP_ACCESS_TOKEN,BASE_URL
 import time
 
 #def function for user information
