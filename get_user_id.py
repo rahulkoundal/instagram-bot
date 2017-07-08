@@ -1,7 +1,8 @@
+#import file from other file
 import  requests
 from constants import BASE_URL ,APP_ACCESS_TOKEN
 
-#get_user_id function 
+#get_user_id function
 def get_user_id(insta_username):
   request_url = (BASE_URL + 'users/search?q=%s&access_token=%s') % (insta_username, APP_ACCESS_TOKEN)
   print 'GET request url : %s' %(request_url)
