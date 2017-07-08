@@ -1,6 +1,6 @@
 #file to get user post
 
-from constants import *
+from constant import APP_ACCESS_TOKEN,BASE_URL
 import requests
 
 #get_posts function to get the user post
@@ -10,7 +10,7 @@ def get_posts():
     request=requests.get(url).json()
 
 #check the responce of the server
-    
+
     if request['meta']['code']==200:
         if len(request['data']):
             print request['data'][0]['id']
