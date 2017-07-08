@@ -22,4 +22,4 @@ def post_comment(insta_username):
 
 
 #calling the defined function
-post_comment(raw_input("username: "))
+post_comment(raw_input("username:"))
