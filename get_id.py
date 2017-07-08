@@ -1,4 +1,4 @@
-#get_user_function
+#get_user id _function 
 import requests
 from constant import *
 from constant import *
