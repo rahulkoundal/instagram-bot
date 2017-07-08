@@ -25,4 +25,3 @@ def get_user_post(insta_username):
         print "code other than 200"
 
 get_user_post(raw_input("enter username:>"))
-Contact GitHub

@@ -1,6 +1,6 @@
 #import file from other file
 import  requests
-from constants import BASE_URL ,APP_ACCESS_TOKEN
+from constant import BASE_URL ,APP_ACCESS_TOKEN
 
 #get_user_id function
 def get_user_id(insta_username):

@@ -4,6 +4,7 @@ from constant import APP_ACCESS_TOKEN,BASE_URL
 from get_post_id import *
 
 #def a fuction for like a user most recent post
+
 def like_a_post(insta_username):
     post_id=get_post_id(insta_username)
     req_url=BASE_URL+'media/%s/likes' % post_id
