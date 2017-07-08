@@ -1,7 +1,7 @@
 #get_user id _function
 import requests
 from constant import *
-from constant import *
+from constant import APP_ACCESS_TOKEN,BASE_URL
 
 #get_user_id function
 
