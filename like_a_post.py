@@ -1,6 +1,5 @@
-#import library or other fuction from another python file
 import requests
-from constant import APP_ACCESS_TOKEN,BASE_URL
+from constant import *
 from get_post_id import *
 
 #def a fuction for like a user most recent post
@@ -20,4 +19,4 @@ def like_a_post(insta_username):
         print "like not completed"
 
 #calling the defined function
-like_a_post(raw_input("enter a  username: >"))
+like_a_post(raw_input("enter a  username: "))

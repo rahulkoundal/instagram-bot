@@ -25,4 +25,4 @@ def get_post_id(insta_username):
         exit()
 
 
-get_post_id(raw_input("enter username:>"))
+#get_post_id(raw_input("enter username:"))
