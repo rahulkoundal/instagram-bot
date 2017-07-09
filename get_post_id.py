@@ -1,6 +1,6 @@
 import requests
 from constant import *
-from get_user_id import *
+from get_id import *
 def get_post_id(insta_username):
     user_id=get_user_id(insta_username)
     if user_id == None:
