@@ -1,11 +1,12 @@
 import requests
 from constant import *
 import urllib
+from get_id import *
 #get_user_info function to fetch user information
 # _
 def get_user_info(insta_username):
     user_id = get_user_id(insta_username)
-    if user_id == None:                      #if user_id ==none no user is found
+    if user_id == None:                      #if user_id ==none no user is founds
         print 'User does not exist!'
         exit()
     request_url = (BASE_URL + 'users/%s?access_token=%s') % (user_id, APP_ACCESS_TOKEN)
