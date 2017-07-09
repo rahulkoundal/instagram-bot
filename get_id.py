@@ -19,3 +19,4 @@ def get_user_id(insta_username):
     else:
         print 'Status code other than 200 received!'
         exit()
+get_user_id(raw_input("enter username:>"))
