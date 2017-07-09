@@ -18,4 +18,4 @@ def get_user_id(insta_username):
       exit()
 
 
-get_user_id(raw_input("enter username:>"))
+

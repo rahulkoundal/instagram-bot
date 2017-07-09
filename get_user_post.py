@@ -13,7 +13,7 @@ def get_user_post(insta_username):
     print "GET requested url :%s" %url
     req_media=requests.get(url).json()
 
-    if req_media['meta']['code']==200:
+    if req_media['meta']['code'] == 200:
         if len(req_media['data']):
             media_name=req_media['data'][0]['id']+'.jpeg'
             media_url=req_media['data'][0]['images']['standard_resolution']['url']
