@@ -1,21 +1,19 @@
-import requests
-from constant import *
 from get_post_id import *
+from get_id import *
+import requests
 
-#def a fuction for like a user most recent post
 
 def like_a_post(insta_username):
-    post_id=get_post_id(insta_username)
-    req_url=BASE_URL+'media/%s/likes' % post_id
-    payload={'access_token' :APP_ACCESS_TOKEN}
-    print 'GET request url %s' %req_url
-    like_post=requests.post(req_url,payload).json()
-
-    #check if server respond to our request or not
-    if like_post['meta']['code'] == 200:
-        print " successfully liked the post"
+    media_id = get_post_id(insta_username)
+    request_url = (BASE_URL + 'media/%s/likes') % (media_id)
+    payload = {"access_token": APP_ACCESS_TOKEN}
+    print 'POST request url : %s' % (request_url)
+    print "ss"
+    post_a_like = requests.post(request_url, payload).json()
+    print "ss"
+    if post_a_like['meta']['code'] == 200:
+        print 'Like was successful!'
     else:
-        print "like not apply"
+        print 'Your like was unsuccessful. Try again!'
 
-#calling the defined function
-like_a_post(raw_input("enter a  username: "))
+like_a_post(raw_input("enter"))

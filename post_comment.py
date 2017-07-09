@@ -1,21 +1,22 @@
-import urllib
-from constant import *
+# import get_post_id
 from get_post_id import *
-#def a fuction for comment on a post
-def post_comment(insta_username):
-    post_id=get_post_id(insta_username)
-    comment=raw_input("write the comment:>")
-    payload={'access_token':APP_ACCESS_TOKEN,'text':comment}
-    request_url=BASE_URL+'media/%s/comments' %post_id
-    print "POST request url %s" % request_url
-    make_comment=requests.post(request_url,payload).json()
 
-    #check what is the response from server
+# post_a_comment() to coomment over user pic
+
+
+def post_a_comment(insta_username):
+    media_id = get_post_id(insta_username)
+    comment_text = raw_input("Your comment: ")
+    payload = {"access_token": APP_ACCESS_TOKEN, "text" : comment_text}
+    request_url = (BASE_URL + 'media/%s/comments') % (media_id)
+    print 'POST request url : %s' % (request_url)
+
+    make_comment = requests.post(request_url, payload).json()
     if make_comment['meta']['code'] == 200:
-        print "commect successfull posted "
+        print "Successfully added a new comment!"
     else:
-        print "commect not posted"
+        print "Unable to add comment. Try again!"
 
+# calling to the function
+post_a_comment(raw_input("enter"))
 
-#calling the defined function
-post_comment(raw_input("username:"))
