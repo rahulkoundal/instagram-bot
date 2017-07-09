@@ -16,7 +16,7 @@ def get_user_info(insta_username):
   user_info = requests.get(request_url).json()#fetch data from content of url query
 
 
-  #check what is the result of query
+  
   if user_info['meta']['code'] == 200:
       if len(user_info['data']):
 
@@ -27,15 +27,15 @@ def get_user_info(insta_username):
           following='No. of people you are following: %s' % (user_info['data']['counts']['follows'])
           no_of_post='No. of posts: %s' % (user_info['data']['counts']['media'])
 
-          #user information store in list
+
           info_list=[user,id,follower,following,no_of_post]
           for x in range(len(info_list)):
               print(info_list[x],end="   ")
-              time.sleep(.700)#wait .700 microsecond then loop again
+              time.sleep(.700)
 
       else:
           print ('There is no data for this user!')
   else:
       print ('Status code other than 200 received!')
 
-get_user_info(raw_input("enter username:>"))
+

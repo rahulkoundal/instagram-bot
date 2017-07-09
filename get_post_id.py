@@ -1,5 +1,5 @@
 import requests
-from constant import APP_ACCESS_TOKEN,BASE_URL
+from constant import *
 from get_user_id import *
 def get_post_id(insta_username):
     user_id=get_user_id(insta_username)
@@ -15,7 +15,7 @@ def get_post_id(insta_username):
     #check if server give response to our request or not
     if user_media['meta']['code']==200:
         if len(user_media['data']):
-            return user_media['data'][0]['id']
+            print user_media['data'][0]['id']
         else:
             print 'there is no recent post of user'
             exit()
@@ -23,3 +23,6 @@ def get_post_id(insta_username):
     else:
         print "code other than 200 recieved"
         exit()
+
+
+get_post_id(raw_input("enter username:>"))

@@ -1,7 +1,7 @@
 #import file from other file
 import  requests
 import urllib
-from constant import BASE_URL,APP_ACCESS_TOKEN
+from constant import *
 
 #get_user_id function
 def get_user_id(insta_username):
@@ -10,7 +10,7 @@ def get_user_id(insta_username):
   user_info=requests.get(request_url).json()
   if user_info['meta']['code'] == 200:
       if len(user_info['data']):
-          return user_info['data'][0]['id']
+          print user_info['data'][0]['id']
       else:
           print "user not exist"
   else:
