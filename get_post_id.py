@@ -3,7 +3,7 @@ from constant import *
 from get_user_id import *
 def get_post_id(insta_username):
     user_id=get_user_id(insta_username)
-    if user_id==None:
+    if user_id == None:
         print 'user does not exist'
         exit()
 
@@ -13,7 +13,7 @@ def get_post_id(insta_username):
     user_media=requests.get(request_url).json()
 
     #check if server give response to our request or not
-    if user_media['meta']['code']==200:
+    if user_media['meta']['code'] == 200:
         if len(user_media['data']):
             print user_media['data'][0]['id']
         else:
