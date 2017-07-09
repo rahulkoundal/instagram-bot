@@ -16,7 +16,7 @@ def like_a_post(insta_username):
         print " successfully liked"
 
     else:
-        print "like not completed"
+        print "like not apply"
 
 #calling the defined function
 like_a_post(raw_input("enter a  username: "))
