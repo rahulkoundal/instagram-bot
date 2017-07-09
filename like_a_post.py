@@ -13,8 +13,7 @@ def like_a_post(insta_username):
 
     #check if server respond to our request or not
     if like_post['meta']['code'] == 200:
-        print " successfully liked"
-
+        print " successfully liked the post"
     else:
         print "like not apply"
 
