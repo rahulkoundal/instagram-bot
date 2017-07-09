@@ -2,6 +2,7 @@
 import urllib3
 import requests
 from self_info import *
+from get_user_id import *
 from get_user_info import *
 
 def main():
