@@ -35,6 +35,7 @@ def self_info():
     else:
         print 'Status code other than 200 received!'
 
+# calling to self_info function
 self_info()
 
 
