@@ -1,5 +1,7 @@
-
+# import get_id files
 from get_id import *
+
+# get_user_info() function
 
 
 def get_user_info(insta_username):
