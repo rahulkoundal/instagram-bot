@@ -13,7 +13,7 @@ def get_post_id(insta_username):
 
     if user_media['meta']['code'] == 200:
         if len(user_media['data']):
-            print user_media['data'][0]['id']
+            return user_media['data'][0]['id']
         else:
             print 'There is no recent post of the user!'
             exit()
@@ -22,5 +22,3 @@ def get_post_id(insta_username):
         exit()
 
 # calling to get_post_id function
-
-get_post_id(raw_input("enter "))

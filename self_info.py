@@ -31,7 +31,7 @@ def self_info():
                 urllib.urlretrieve(image, image1)
                 print 'image is downloaded'
             else:
-                 print 'User does not exist!'
+                print 'User does not exist!'
     else:
         print 'Status code other than 200 received!'
 
