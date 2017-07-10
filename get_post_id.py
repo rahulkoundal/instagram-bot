@@ -20,4 +20,4 @@ def get_post_id(insta_username):
         print 'Status code other than 200 received!'
         exit()
 
-# get_post_id(raw_input("enter "))
+get_post_id(raw_input("enter "))
