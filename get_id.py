@@ -13,7 +13,7 @@ def get_user_id(insta_username):
 
     if user_info['meta']['code'] == 200:
         if len(user_info['data']):
-            print user_info['data'][0]['id']
+            return user_info['data'][0]['id']      # use return if used this file in future instead of print
         else:
             return None
     else:
@@ -21,4 +21,4 @@ def get_user_id(insta_username):
         exit()
 
 # calling the function
-get_user_id(raw_input("enter"))
+# get_user_id(raw_input("enter"))
