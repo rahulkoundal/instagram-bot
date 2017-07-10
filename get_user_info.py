@@ -25,4 +25,4 @@ def get_user_info(insta_username):
         print 'Status code other than 200 received!'
 
 # calling the get_user_info function
-get_user_info(raw_input("enter"))
+# get_user_info(raw_input("enter"))

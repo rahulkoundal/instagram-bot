@@ -16,4 +16,4 @@ def like_a_post(insta_username):
     else:
         print 'Your like was unsuccessful. Try again!'
 
-like_a_post(raw_input("enter"))
+# like_a_post(raw_input("enter"))
