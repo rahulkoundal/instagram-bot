@@ -1,4 +1,5 @@
 from get_id import *
+import urllib
 
 
 def get_post_id(insta_username):
@@ -19,5 +20,7 @@ def get_post_id(insta_username):
     else:
         print 'Status code other than 200 received!'
         exit()
+
+# calling to get_post_id function
 
 get_post_id(raw_input("enter "))
