@@ -1,7 +1,6 @@
 #import all need labraries and functions from files
 from obj import *
 from get_id import *
-from new_obj import wordcloud
 
 #  function which fetch the hash tag comment from users post
 
@@ -26,7 +25,6 @@ def get_hash_tag(insta_username):
 
 
     # call wordcloud  function for making word cloud of hash tag comment in a activity
-     wordcloud()
+
 
     #call the fuction
-get_hash_tag(raw_input("enter"))

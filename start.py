@@ -5,6 +5,7 @@ from like_a_post import like_a_post
 from get_user_post import get_user_post
 from post_comment import post_comment
 from get_own_post import get_own_post
+from new_obj import *
 
 # from objective import get_hash_tag
 import time
@@ -16,7 +17,7 @@ def init_bot():
     option_list = ['\t\t\t\t*************************Welcome to instabot*****************************',
                    'A.Get your own details', 'B..Get details of user by username', 'C..get your own recent post',
                    'D..get recent post of user by username ', 'E..Like most recent user post',
-                   'F..make comment on user recent post ','...write exit to leave instabot']
+                   'F..make comment on user recent post ','G..YOUR FRIND ANANLYSIS BASIC BY Hasttag','...write exit to leave instabot']
 
     instabot = True
 
@@ -52,6 +53,9 @@ def init_bot():
             elif select_option == 'F':
                 insta_username = raw_input("Enter username::")
                 post_comment(insta_username)
+
+            elif select_option == 'G':
+                objective()
 
 
             elif select_option =='EXIT':
