@@ -18,5 +18,5 @@ def post_comment(insta_username):
         print "Unable to add comment. Try again!"
 
 # calling to the function
-post_a_comment(raw_input("enter"))
+# post_comment(raw_input("enter"))
 
